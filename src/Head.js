@@ -23,7 +23,7 @@ import './App.css';
     return (
       
         <div>
-      <div  >
+      <div>
         <Navbar color="light" light expand="md" id="navprop">
           <NavbarBrand href="/"><h1>synerD</h1></NavbarBrand>
           <NavbarToggler/>

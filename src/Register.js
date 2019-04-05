@@ -7,14 +7,25 @@ render(){
         <div className='container'>
     <Form>
   <Form.Group controlId="formBasicEmail">
-   <p><Form.Label>Email address</Form.Label>
-   <Form.Control type="email" placeholder="Enter email" /></p>
-    
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
+   <Form.Label>User name</Form.Label>
+   <Form.Control type="email" placeholder="Select Username" />
   </Form.Group>
 
+  <Form.Row>
+  <Form.Group controlId="formBasicEmail">
+   <Form.Label>First name</Form.Label>
+   <Form.Control type="Fname" placeholder="Enter First name" />
+  </Form.Group>
+
+  <Form.Group controlId="formBasicEmail">
+   <Form.Label>Middle name</Form.Label>
+   <Form.Control type="Mname" placeholder="Enter Middle name" />
+  </Form.Group>
+  <Form.Group controlId="formBasicEmail">
+   <Form.Label>Last name</Form.Label>
+   <Form.Control type="Mname" placeholder="Enter Last name" />
+  </Form.Group>
+  </Form.Row>
   <Form.Group controlId="formBasicPassword">
     <Form.Label>Password</Form.Label>
     <Form.Control type="password" placeholder="Password" />
