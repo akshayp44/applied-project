@@ -6,21 +6,20 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   } from 'reactstrap';
 
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './App.css';
 
 
   class Head extends React.Component {
   
   render() {
-    console.log(this.props);
+    var clr = {color : 'black'}
     return (
       
         <div>
@@ -40,18 +39,18 @@ import './App.css';
           </NavbarBrand>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="http://www.ffutche.org/galleries/events/"><span class="fa fa-image"></span>  &nbsp;Galleries</NavLink>
+                <NavLink href="http://www.ffutche.org/galleries/events/" style= { clr }><span class="fa fa-image"></span>  &nbsp;Galleries</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
               <NavItem>
-                <NavLink href="http://www.ffutche.org/homepage/contact_us"><span class="fa fa-book"></span> &nbsp;Contact Us</NavLink>
+                <NavLink href="http://www.ffutche.org/homepage/contact_us" style= { clr }><span class="fa fa-book"></span> &nbsp;Contact Us</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
               <NavItem>
-                <NavLink href="http://www.ffutche.org/homepage/about_us"><span class="fa fa-info"></span>&nbsp;About Us</NavLink>
+                <NavLink href="http://www.ffutche.org/homepage/about_us" style= { clr }><span class="fa fa-info"></span>&nbsp;About Us</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
 
               
               
-              <UncontrolledDropdown nav inNavbar>
+              <UncontrolledDropdown nav inNavbar className='padd'>
                 <DropdownToggle nav caret>
                 <span class="fa fa-book"></span> &nbsp; Our Work
                 </DropdownToggle>
@@ -88,19 +87,19 @@ import './App.css';
           <span class="fa fa-leaf"></span>Donate</button>
             <Nav className="ml-auto" navbar>
             <NavItem>
-                <Link to="/"><span class="fa fa-home"></span>&nbsp;Home</Link>&nbsp;&nbsp;&nbsp;
+                <NavLink to="/" style= { clr }><span class="fa fa-home"></span>&nbsp;Home</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
             <NavItem>
-                <Link to="#"><span class="fa fa-user-circle"></span>&nbsp;Members</Link>&nbsp;&nbsp;&nbsp;
+                <NavLink to="#" style= { clr }><span class="fa fa-user-circle"></span>&nbsp;Members</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
               <NavItem>
-                <Link to="#"><span class="fa fa-folder"></span>&nbsp;Resources</Link>&nbsp;&nbsp;&nbsp;
+                <NavLink to="#" style= { clr }><span class="fa fa-folder"></span>&nbsp;Resources</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
               <NavItem>
-                <Link to='#'><span class="fa fa-user-circle"></span>&nbsp;Sign In</Link>&nbsp;&nbsp;&nbsp;
+                <NavLink to='#' style= { clr }><span class="fa fa-user-circle"></span>&nbsp;Sign In</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
               <NavItem>
-                <Link to='/Register' ><span class="fa fa-handshake"></span>&nbsp;Join Us</Link>
+                <NavLink to='/Register' style= { clr }><span class="fa fa-handshake"></span>&nbsp;Join Us</NavLink>
               </NavItem>
           </Nav>
           </Collapse>
