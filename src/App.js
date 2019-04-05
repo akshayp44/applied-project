@@ -7,10 +7,9 @@ import Head from './Head';
 import 'react-bootstrap';
 import FooterPage from './FooterPage';
 import Slider from './Slider';
-import Register from './Register';
 import Example from './Example';
 import { BrowserRouter as Router} from 'react-router-dom';
-import Route from 'react-router-dom/Route'
+//import Route from 'react-router-dom/Route'
 //import News from './News';
 
 
@@ -24,7 +23,7 @@ class App extends Component {
       
       <div className='App' >
         <Router>
-        <Route path = '/register' exact Component={Register}/>
+        
       
       
       
@@ -35,12 +34,14 @@ class App extends Component {
        
       
       <p>
-      <Register/>
+      <Slider/>
       </p>
       
+      <p>
+       <Example/>
+      </p>
     
       <p>
-      
      <FooterPage/>
      </p>
      </Router>
