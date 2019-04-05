@@ -1,5 +1,23 @@
-.App {
+.bott{
+  position: relative;
+  bottom: inherit;
+}
+
+.body{
+  height: 100%;
+}
+
+.serv{
+  padding: 40px 0px; 
+  background-position: 50% 40px;
   text-align: center;
+}
+
+
+.news {
+  text-align: center;
+  
+ 
 }
 
 .App-logo {
@@ -7,6 +25,7 @@
   height: 40vmin;
   pointer-events: none;
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -17,6 +36,52 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#second-navbar {
+  margin: 0;
+}
+
+#synerd{
+  color: #00008B;
+  font-family: Lucida Sans Unicode;
+}
+
+#syn{
+  font-family: Lucida Sans Unicode;
+  color: #00008B;
+}
+#card1{
+  background-color: white;
+  height: 150px;
+}
+#card2{
+  background-color: white;
+  height : 100%; 
+  padding-right : 0px;
+}
+
+#abcd-custom
+{
+  height : 100%; 
+  padding-right : 0px;
+}
+
+#row1
+{
+  width: 400px;
+  
+}
+
+#todo {
+  font-family: Harrington;
+  color:#808080;
+  
+}
+
+
+#newshead{
+  font-family: Lucida Sans Unicode;
 }
 
 .App-link {
@@ -30,4 +95,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+ 
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Site-content {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+
+.Site-content:after {
+  content: '\00a0';
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
 }
