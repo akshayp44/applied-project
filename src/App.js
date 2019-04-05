@@ -6,11 +6,11 @@ import "mdbreact/dist/css/mdb.css";
 import Head from './Head';
 import 'react-bootstrap';
 import FooterPage from './FooterPage';
-import Slider from './Slider';
-import Example from './Example';
+//import Slider from './Slider';
+
 import { BrowserRouter as Router} from 'react-router-dom';
 //import Route from 'react-router-dom/Route'
-//import News from './News';
+import Pbody from './Pbody';
 
 
 //import { Nav } from 'react-bootstrap';
@@ -20,30 +20,17 @@ import { BrowserRouter as Router} from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      
       <div className='App' >
-        <Router>
-        
-      
-      
-      
-      <p>
-      <Head/>
-      </p>
-
-       
-      
-      <p>
-      <Slider/>
-      </p>
-      
-      <p>
-       <Example/>
-      </p>
-    
-      <p>
-     <FooterPage/>
-     </p>
+      <Router>
+          <p>
+            <Head/>
+          </p>
+          <p>
+            <Pbody/>
+          </p>
+          <p>
+            <FooterPage/>
+          </p>
      </Router>
       </div>
     );
