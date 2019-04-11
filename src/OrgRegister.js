@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import axios, { post } from 'axios';
+import { post } from 'axios';
 import { Form, Button} from 'react-bootstrap';
 
 
