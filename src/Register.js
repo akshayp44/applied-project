@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
  
 import "react-datepicker/dist/react-datepicker.css";
 import { Form, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -41,6 +42,11 @@ render(){
 
 
 <div className='container' align="left">
+<p>if you are an orgainzation please
+  <Link to='/OrgRegister'>
+  <Button type='submit'>register here</Button>
+  </Link>
+</p>
     <Form>
 
       <Form.Group controlId="formBasicEmail">

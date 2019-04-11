@@ -87,7 +87,7 @@ import './App.css';
                 <NavLink to="/" style= { clr }><span class="fa fa-home"></span>&nbsp;Home</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
             <NavItem>
-                <NavLink to='/OrgRegister' style= { clr }><span class="fa fa-user-circle"></span>&nbsp;Members</NavLink>&nbsp;&nbsp;&nbsp;
+                <NavLink to='#' style= { clr }><span class="fa fa-user-circle"></span>&nbsp;Members</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
               <NavItem>
                 <NavLink to="#" style= { clr }><span class="fa fa-folder"></span>&nbsp;Resources</NavLink>&nbsp;&nbsp;&nbsp;
