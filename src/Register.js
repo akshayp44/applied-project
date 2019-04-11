@@ -42,6 +42,7 @@ render(){
 
 <div className='container' align="left">
     <Form>
+
       <Form.Group controlId="formBasicEmail">
         <Form.Label>User name</Form.Label>
         <Form.Control type="email" placeholder="Select Username" />
@@ -127,14 +128,10 @@ render(){
 
 
     </Form.Group>
-
-
-
-      
-      
       <Button variant="primary" type="submit">
         Submit
       </Button>
+
 </Form>
     </div>
     );

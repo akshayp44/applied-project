@@ -47,7 +47,6 @@ import './App.css';
               <NavItem>
                 <NavLink href="http://www.ffutche.org/homepage/about_us" style= { clr }><span class="fa fa-info"></span>&nbsp;About Us</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
-
               
               
               <UncontrolledDropdown nav inNavbar className='padd'>
@@ -71,8 +70,6 @@ import './App.css';
           </Collapse>
         </Navbar>
       </div>
-
-
       <div  >
         <Navbar color="light" light expand="md">
           <NavbarToggler />
@@ -90,7 +87,7 @@ import './App.css';
                 <NavLink to="/" style= { clr }><span class="fa fa-home"></span>&nbsp;Home</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
             <NavItem>
-                <NavLink to="#" style= { clr }><span class="fa fa-user-circle"></span>&nbsp;Members</NavLink>&nbsp;&nbsp;&nbsp;
+                <NavLink to='/OrgRegister' style= { clr }><span class="fa fa-user-circle"></span>&nbsp;Members</NavLink>&nbsp;&nbsp;&nbsp;
               </NavItem>
               <NavItem>
                 <NavLink to="#" style= { clr }><span class="fa fa-folder"></span>&nbsp;Resources</NavLink>&nbsp;&nbsp;&nbsp;
@@ -106,18 +103,12 @@ import './App.css';
         
         </Navbar>
       </div>
-
-
-
       
       
       </div>
       
       
     );
-
   }
 }
-
-
 export default Head;
