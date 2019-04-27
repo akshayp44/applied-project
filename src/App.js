@@ -22,12 +22,12 @@ class App extends Component {
     return (
       <div className='App' >
       <Router>
-         <p>
+         
             <Head/>
-            </p>
-         <p>
+           
+         
             <Pbody/>
-            </p>
+            
          
             <FooterPage/>
          

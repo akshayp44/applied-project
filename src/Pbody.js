@@ -4,6 +4,7 @@ import Slider from './Slider'
 import Register from './Register'
 import OrgRegister from './OrgRegister'
 import Login from './Login'
+import dashbord from './dashbord'
 //import Schedule from './Schedule'
 class Pbody extends Component{
     render(){
@@ -13,6 +14,7 @@ class Pbody extends Component{
                 <Route path='/Register' component={Register}/>
                 <Route path='/OrgRegister' component={OrgRegister}/>
                 <Route exact path='/Login' component={Login}/>
+                <Route exact path='/dashbord' component={dashbord}/>
             </Switch>
         );
     }

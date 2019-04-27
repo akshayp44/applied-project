@@ -8,7 +8,9 @@
   position: relative;
   bottom: inherit;
 }
-
+.Row{
+  width: 100%;
+}
 .body{
   height: 100%;
   background-image: "./images/background.jpg"
@@ -68,19 +70,14 @@
   background-color: white;
   height : 100%; 
   padding-right : 0px;
+  text-align: center;
 }
 
-#abcd-custom
-{
-  height : 100%; 
-  padding-right : 0px;
+#announcements{
+  padding-top: 50px;
 }
 
-#row1
-{
-  width: 400px;
-  
-}
+
 
 #todo {
   font-family: Harrington;
