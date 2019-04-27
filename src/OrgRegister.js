@@ -43,7 +43,7 @@ render(){
     return(
 
 
-<div className='container' align="left">
+<div className='container pad' align="left">
     <Form>
   <Form.Group controlId="formBasicOrgname">
    <Form.Label>organization name</Form.Label>

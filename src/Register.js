@@ -41,7 +41,7 @@ render(){
     return(
 
 
-<div className='container' align="left">
+<div className='container pad' align="left">
 <p>if you are an orgainzation please
   <Link to='/OrgRegister'>
   <Button type='submit'>register here</Button>

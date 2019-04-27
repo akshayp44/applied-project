@@ -4,7 +4,7 @@ import { Form, Button} from 'react-bootstrap';
 class Login extends React.Component {
 render(){
     return(
-<div className='container'>
+<div className='container pad'>
 <Form>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Username</Form.Label>
