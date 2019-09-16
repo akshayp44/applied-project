@@ -1,3 +1,118 @@
+<<<<<<< HEAD
+import React from 'react';
+import './App.css';
+// eslint-disable-next-line 
+import axios from 'axios';
+import CSVReader from 'react-csv-reader'
+import { Form, Input, Button } from 'antd'; 
+
+const FormItem = Form.Item;
+
+
+class OrgRegister extends React.Component {
+        handleFormSubmit = (event) => {
+                event.preventDefault();
+                const orgname = event.target.elements.orgname.value;
+                const desc = event.target.elements.desc.value;
+                const address = event.target.elements.address.value;
+                const city = event.target.elements.city.value;
+                const state = event.target.elements.state.value;
+                const phone = event.target.elements.phone.value;
+                const zip = event.target.elements.zip.value;
+                const file = event.target.elements.file.value;
+                
+  
+        return axios.post('http://127.0.0.1:8000/org member/', {
+                orgname : orgname,
+                city : city,
+                state : state,
+                zip : zip,
+                phone : phone,
+                desc : desc,
+                address: address,
+                file: file
+
+            })
+            .then(res => console.log(res))
+            .catch(error => console.error(error));
+        }
+  
+  
+render(){
+
+       
+    return(
+
+
+<div className='containerorgform' align="center">
+
+  
+  <Form onSubmit = {(event) => this.handleFormSubmit(
+                          event
+                      )}>
+        <br></br>
+        <FormItem label = "Organization name">
+                <Input name="orgname" placeholder="Enter your organization name"  />
+        </FormItem >
+        
+        
+        <FormItem label = "Description">
+                <Input name="desc" placeholder="Enter description"  />
+        </FormItem >
+
+
+        
+        <FormItem label = "Address">
+                <Input name="address" placeholder="Enter your address"  />
+        </FormItem >
+
+  
+       <FormItem label = "City">
+                <Input name="city" placeholder="Enter city"  />
+        </FormItem >
+
+        <FormItem label = "Zipcode">
+                <Input name="zip" placeholder="Enter your zipcode"  />
+        </FormItem >
+
+        <FormItem label = "State">
+                <Input name="state" placeholder="Enter your state"  />
+        </FormItem >
+ 
+        <FormItem label = "Phone number">
+                <Input name="phone" placeholder="Enter your phone number"  />
+        </FormItem >
+        <br></br>
+        <CSVReader
+        cssClass="csv-reader-input"
+        label="Select CSV to upload members"
+        onFileLoaded={this.handleForce}
+        onError={this.handleDarkSideForce}
+        inputId="ObiWan"
+        input name = "file"
+        inputStyle={{color: 'red'}}
+      />
+
+      <FormItem>
+
+                      <Button type="primary" htmlType="submit" >
+                         
+                          Submit
+                      </Button>
+                      </FormItem>
+  
+
+      
+ 
+
+   </Form>
+   
+   </div>
+    );
+}
+}
+export default OrgRegister;
+=======
 import React from 'react';
 import './App.css';
 import { post } from 'axios';
@@ -106,3 +221,4 @@ render(){
 }
 }
 export default OrgRegister;
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9

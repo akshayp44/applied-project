@@ -9,7 +9,11 @@ import FooterPage from './FooterPage';
 //import Slider from './Slider';
 
 import { BrowserRouter as Router} from 'react-router-dom';
+<<<<<<< HEAD
+//import Route from 'react-router-dom/Router'
+=======
 //import Route from 'react-router-dom/Route'
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
 import Pbody from './Pbody';
 
 
@@ -21,6 +25,18 @@ class App extends Component {
   render() {
     return (
       <div className='App' >
+<<<<<<< HEAD
+        <Router>
+         
+            <Head/>
+         
+            <Pbody/>
+         
+         
+            <FooterPage/>
+         
+        </Router>
+=======
       <Router>
          
             <Head/>
@@ -32,6 +48,7 @@ class App extends Component {
             <FooterPage/>
          
      </Router>
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
       </div>
     );
   }

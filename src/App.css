@@ -4,12 +4,37 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
+.containerform{
+  font-family: Apple Chancery, cursive;
+}
+
+.containerorgform{
+  font-family: Apple Chancery, cursive;
+}
+
+
+.news{
+font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.text{
+  text-align: center; 
+}
+=======
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
 .bott{
   position: relative;
   bottom: inherit;
 }
+<<<<<<< HEAD
+.header{
+  background-color: white;
+ 
+  
+=======
 .Row{
   width: 100%;
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
 }
 .body{
   height: 100%;
@@ -20,6 +45,8 @@
   padding-left: 20px;
 }
 
+<<<<<<< HEAD
+=======
 .Navbar-brand{
   margin: 0;
 }
@@ -28,6 +55,7 @@
   padding-top: 20px;
 }
 
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
 .serv{
   padding: 40px 0px; 
   background-position: 50% 40px;
@@ -37,24 +65,71 @@
 
 .navbar.navbar-light .breadcrumb .nav-item .nav-link, .navbar.navbar-light .navbar-nav .nav-item .nav-link{
    padding-top: 0;
+<<<<<<< HEAD
+   
+=======
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  
   pointer-events: none;
 }
 
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
+}
+
+.logoarea{
+  vertical-align: 40px;
+}
+#second-navbar {
+  margin: 0;
+}
+
+
+
+#card1{
+  background-color: white;
+  height: 150px;
+}
+#card2{
+  background-color: white;
+  height : 100%; 
+  padding-right : 0px;
+  font-family: Apple Chancery, cursive;
+}
+.font-small bott pt-4 mt-4{
+  font-family: Apple Chancery, cursive;
+}
+
+#abcd-custom
+{
+  height : 100%; 
+  padding-right : 0px;
+}
+
+
+
+#todo {
+  font-family: Harrington;
+  color:#808080;
+  
+}
+
+
+#newshead{
+  font-family: Lucida Sans Unicode;
 }
 
 #second-navbar {
@@ -111,6 +186,12 @@
   }
 }
  
+<<<<<<< HEAD
+
+
+
+
+=======
 .Site {
   display: flex;
   flex-direction: column;
@@ -130,3 +211,4 @@
   height: 0;
   visibility: hidden;
 }
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9

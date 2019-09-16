@@ -2,7 +2,23 @@
   "name": "ap",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "dependencies": {
+<<<<<<< HEAD
+    "antd": "^3.20.3",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "elemental": "^0.6.1",
+    "filepond": "^4.4.11",
+    "mdbreact": "^4.11.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-csv-reader": "^1.2.2",
+    "react-datepicker": "^2.3.0",
+    "react-dom": "^16.8.6",
+    "react-filepond": "^7.0.1",
+    "react-newline-to-break": "^1.0.6",
+=======
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "formik": "^1.5.2",
@@ -11,6 +27,7 @@
     "react-bootstrap": "^1.0.0-beta.5",
     "react-datepicker": "^2.3.0",
     "react-dom": "^16.8.1",
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
     "react-panels": "^2.5.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^5.0.0",
@@ -18,7 +35,11 @@
     "react-simple-card": "^1.0.11",
     "react-sticky-footer": "0.1.0-rc3",
     "reactstrap": "^7.1.0",
+<<<<<<< HEAD
+    "redux-thunk": "^2.3.0"
+=======
     "yup": "^0.27.0"
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,6 +57,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
+<<<<<<< HEAD
+    "react-image-resizer": "^1.3.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
+    "webpack-bundle-tracker": "^0.4.2-beta"
+=======
     "@types/react-router-dom": "^4.3.1"
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
   }
 }

@@ -1,5 +1,142 @@
 import React from 'react';
 import './App.css';
+<<<<<<< HEAD
+
+//import { Form, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+import axios from 'axios';
+import { Form, Input, Button } from 'antd'; 
+
+
+const FormItem = Form.Item;
+//const {TextArea} = Input;
+
+
+
+
+class Register extends React.Component {
+ 
+    handleFormSubmit = (event) => {
+         event.preventDefault();
+         const fname = event.target.elements.fname.value;
+         const mname = event.target.elements.mname.value;
+         const lname = event.target.elements.lname.value;
+         const uname = event.target.elements.uname.value;
+         const pwd = event.target.elements.pwd.value;
+         const address = event.target.elements.address.value;
+         const city = event.target.elements.city.value;
+         const state = event.target.elements.state.value;
+         const zip = event.target.elements.zip.value;
+          
+         //console.log(fname, mname, lname, uname, pwd, address, city, state, zip)
+          //console.log(postObj );
+          // eslint-disable-next-line
+          
+                return axios.post('http://127.0.0.1:8000/dbinit/', {
+                    fname : fname,
+                    mname : mname,
+                    lname : lname,
+                    uname : uname,
+                    pwd : pwd,
+                    address : address,
+                    city: city,
+                    state: state,
+                    zip: zip
+
+                })
+                .then(res => console.log(res))
+                .catch(error => console.error(error));
+                
+          
+
+          
+
+          }
+          
+
+                  
+        
+      render(){
+        return(
+          
+            <div className = "containerform" align="center">
+                 
+                      <Form onSubmit = {(event) => this.handleFormSubmit(
+                          event
+                      )}>
+                           <br></br>  If you are an orgainzation please &nbsp;&nbsp;&nbsp;
+                      <Link to='/OrgRegister'>
+                        <Button type='primary'>register here</Button>
+                      </Link>
+                      <br></br>
+                            <FormItem label = "First name">
+                                
+                                <Input name="fname" placeholder="Enter First name"  />
+                            </FormItem >
+                            
+
+                            <FormItem label = "Middle name"  >
+                                
+                                <Input name="mname" placeholder="Enter middle name"  />
+                            </FormItem >
+                            <FormItem label = "Last name"  >
+                                
+                                <Input name="lname" placeholder="Enter Last name"  />
+                            </FormItem >
+                      
+                          
+                            <FormItem label = "User name"  >
+                                
+                                <Input name="uname" placeholder="Enter user name"  />
+                            </FormItem >
+                        
+
+                            <FormItem label = "Password"  >
+                                
+                                <Input name="pwd" type = "password"  placeholder="Enter password"  />
+                            </FormItem>
+                            
+                             
+                            <FormItem label = "Address">
+                                
+                                <Input name="address" placeholder="Enter address"  />
+                            </FormItem>
+                      
+                            <FormItem label = "City">
+                                
+                                <Input name="city" placeholder="City name"  />
+                            </FormItem>
+
+                            <FormItem label = "Zipcode"  >
+                                
+                                <Input name="zip" placeholder="Zipcode of area"  />
+                            </FormItem >
+                            <FormItem label = "State" >
+                                
+                                <Input name="state" placeholder="Enter state"  />
+                            </FormItem>
+                        <br></br>
+                        
+
+                    <FormItem>
+
+                      <Button type="primary" htmlType="submit">
+                         
+                          Submit
+                      </Button>
+                      </FormItem>
+
+                  </Form>
+      </div>  
+            
+    );
+
+}
+
+}
+export default Register;
+=======
 import DatePicker from "react-datepicker";
  
 import "react-datepicker/dist/react-datepicker.css";
@@ -144,3 +281,4 @@ render(){
 }
 }
 export default Register;
+>>>>>>> 724d4239cc107e97e39ba11ce97bc877928ea2b9
